@@ -32,3 +32,10 @@ The scene is divided by the stage of the main character's life. According to the
 
   **Developmental period**: Late adulthood (60s– ) **Characteristics**: Individuals look back and evaluate what they have done with their lives. The retrospective glances can be either positive (integrity) or negative (despair).
 
+时间的作用：
+
+* 磨损，改变一些事物【lv.2】
+* 激发一些特定时间发生的事件【lv.1】
+* 调整光线【lv.2】
+* 通过和其他时间显示设备的联动调整**范围内的时间**，可以改变season，years【lv.4】
+* 携带未来的东西解决过去的谜题，弥补缺憾，**得到的新道具不能对未来的剧情走向造成影响（相当于收藏品）**。【lv.5】
