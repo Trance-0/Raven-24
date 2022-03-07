@@ -200,13 +200,13 @@ part 3
 
 
 
+自杀头套
 
 
 
 
 
-
-
+表就是车 
 
 无限列车 
 
@@ -224,4 +224,45 @@ Manic depression，
 
 
 
-Time present and time past Are both perhaps present in time future, And time future contained in time past. If all time is eternally present All time is unredeemable.    -------TS Eliot
+Time present and time past Are both perhaps present in time future, And time future contained in time past. If all time is eternally present All time is unredeemable.    -------TS Elio
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+------------
+
+
+
+
+
+进入混乱意识  2d 和 3d   3d 物品可使用-
+
+表为火车
+
+
+
+结尾 房间内什么都没有了，一个凳子， 一绳子， 一桌子 解谜   写日记结尾  一开始没结尾    好结局
+
+
+
