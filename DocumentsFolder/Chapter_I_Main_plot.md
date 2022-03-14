@@ -492,6 +492,15 @@ Possibility:  参考游戏（house） 一系列操作的结合可以获得完美
 
 
 
+Girl next door has a room that is isolated from time and space.   
+
+
+
+
+
+两个小女孩是同一个人， 小女孩在结束了这次旅行之后意识永恒的被困于屋子里。
+
+1.  The event in itself.
 
 
 
@@ -499,6 +508,35 @@ Possibility:  参考游戏（house） 一系列操作的结合可以获得完美
 
 
 
+2.
+
+
+
+sub-line of logic.        the interpretation of the alignment of both existence.       
+
+
+
+both are the same existence.         A room of existence beyond and within time itself.       
+
+
+
+
+
+
+
+3.  is but a projection of her mind into an room.  the room is the girls self-projection of his own existence knowledge and 
+
+
+
+
+
+
+
+why is the house next door more luxurious.  Time
+
+
+
+A Girl Ago by Lucie Brock-Broido No feeding on wisteria. No pitch-burner traipsing In the nettled woods. No milk in metal cylinders, no Buttering. No making small contusions on the page But saying nothing no one has not said before. No milkweed blown across your pony-coat, no burrs. No scent of juniper on your Jacobean mouth. No crush Of ink or injury, no lacerating wish. Extinguish me from this. I was sixteen for twenty years. By September I will be a ghost And flickering in unison with all the other fireflies in Appalachia, Blinking in the swarm of it, and all at once, above And on a bare branch in a shepherd's sky. No Dove. There is no thou to speak of
 
 
 
