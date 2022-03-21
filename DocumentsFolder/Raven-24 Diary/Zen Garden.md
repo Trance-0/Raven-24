@@ -1,0 +1,26 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Wait patiently.  Focus on your breathe, heartbeat and the nothingness of your mind.  Don't rush, for all flow will naturally come and go.
+
+
+
+
+
