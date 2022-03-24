@@ -53,52 +53,52 @@
     <UnityVersion>2020.3.30f1c1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Assets\Plugins\LowPolyOpenWorld\PostProcessing\Runtime\Components\FxaaComponent.cs" />
     <Compile Include="Assets\Plugins\AllSkyFree\AllSkyFree_Menu.cs" />
-    <Compile Include="Assets\Plugins\LowPolyOpenWorld\PostProcessing\Runtime\Components\ScreenSpaceReflectionComponent.cs" />
-    <Compile Include="Assets\Plugins\LowPolyOpenWorld\PostProcessing\Runtime\Components\FogComponent.cs" />
     <Compile Include="Assets\Plugins\LowPolyOpenWorld\PostProcessing\Runtime\Attributes\GetSetAttribute.cs" />
     <Compile Include="Assets\Plugins\LowPolyOpenWorld\PostProcessing\Runtime\Components\ChromaticAberrationComponent.cs" />
-    <Compile Include="Assets\Plugins\LowPolyOpenWorld\PostProcessing\Runtime\Models\BloomModel.cs" />
-    <Compile Include="Assets\Plugins\LowPolyOpenWorld\PostProcessing\Runtime\Components\FxaaComponent.cs" />
-    <Compile Include="Assets\Plugins\LowPolyOpenWorld\PostProcessing\Runtime\Components\GrainComponent.cs" />
-    <Compile Include="Assets\Plugins\LowPolyOpenWorld\PostProcessing\Runtime\Models\MotionBlurModel.cs" />
     <Compile Include="Assets\Plugins\LowPolyOpenWorld\PostProcessing\Runtime\Components\BuiltinDebugViewsComponent.cs" />
-    <Compile Include="Assets\Plugins\LowPolyOpenWorld\PostProcessing\Runtime\Models\DepthOfFieldModel.cs" />
-    <Compile Include="Assets\Plugins\LowPolyOpenWorld\PostProcessing\Runtime\Models\VignetteModel.cs" />
     <Compile Include="Assets\Plugins\LowPolyOpenWorld\PostProcessing\Runtime\Attributes\TrackballGroupAttribute.cs" />
-    <Compile Include="Assets\Plugins\LowPolyOpenWorld\PostProcessing\Runtime\Models\GrainModel.cs" />
     <Compile Include="Assets\Plugins\LowPolyOpenWorld\PostProcessing\Runtime\Utils\ColorGradingCurve.cs" />
-    <Compile Include="Assets\Plugins\LowPolyOpenWorld\PostProcessing\Runtime\Components\EyeAdaptationComponent.cs" />
-    <Compile Include="Assets\Plugins\LowPolyOpenWorld\PostProcessing\Runtime\Models\ChromaticAberrationModel.cs" />
-    <Compile Include="Assets\Plugins\LowPolyOpenWorld\PostProcessing\Runtime\PostProcessingContext.cs" />
-    <Compile Include="Assets\Plugins\LowPolyOpenWorld\PostProcessing\Runtime\Models\ColorGradingModel.cs" />
-    <Compile Include="Assets\Plugins\LowPolyOpenWorld\PostProcessing\Runtime\Attributes\TrackballAttribute.cs" />
-    <Compile Include="Assets\Plugins\LowPolyOpenWorld\PostProcessing\Runtime\Components\AmbientOcclusionComponent.cs" />
-    <Compile Include="Assets\Plugins\LowPolyOpenWorld\PostProcessing\Runtime\Components\MotionBlurComponent.cs" />
-    <Compile Include="Assets\Plugins\LowPolyOpenWorld\PostProcessing\Runtime\Models\ScreenSpaceReflectionModel.cs" />
-    <Compile Include="Assets\Plugins\LowPolyOpenWorld\PostProcessing\Runtime\PostProcessingModel.cs" />
-    <Compile Include="Assets\Plugins\LowPolyOpenWorld\PostProcessing\Runtime\Components\DepthOfFieldComponent.cs" />
-    <Compile Include="Assets\Plugins\LowPolyOpenWorld\PostProcessing\Runtime\Attributes\MinAttribute.cs" />
-    <Compile Include="Assets\Plugins\LowPolyOpenWorld\PostProcessing\Runtime\Components\UserLutComponent.cs" />
-    <Compile Include="Assets\Plugins\LowPolyOpenWorld\PostProcessing\Runtime\Components\ColorGradingComponent.cs" />
     <Compile Include="Assets\Plugins\LowPolyOpenWorld\PostProcessing\Runtime\PostProcessingBehaviour.cs" />
     <Compile Include="Assets\Plugins\LowPolyOpenWorld\PostProcessing\Runtime\Models\EyeAdaptationModel.cs" />
     <Compile Include="Assets\Plugins\LowPolyOpenWorld\PostProcessing\Runtime\Utils\GraphicsUtils.cs" />
-    <Compile Include="Assets\Plugins\LowPolyOpenWorld\PostProcessing\Runtime\Models\AmbientOcclusionModel.cs" />
-    <Compile Include="Assets\Plugins\LowPolyOpenWorld\PostProcessing\Runtime\Models\AntialiasingModel.cs" />
-    <Compile Include="Assets\Plugins\LowPolyOpenWorld\PostProcessing\Runtime\Components\DitheringComponent.cs" />
-    <Compile Include="Assets\Plugins\LowPolyOpenWorld\PostProcessing\Runtime\Utils\RenderTextureFactory.cs" />
-    <Compile Include="Assets\Plugins\LowPolyOpenWorld\PostProcessing\Runtime\Models\UserLutModel.cs" />
-    <Compile Include="Assets\Plugins\LowPolyOpenWorld\PostProcessing\Runtime\Models\BuiltinDebugViewsModel.cs" />
-    <Compile Include="Assets\Plugins\LowPolyOpenWorld\PostProcessing\Runtime\PostProcessingProfile.cs" />
-    <Compile Include="Assets\Plugins\LowPolyOpenWorld\PostProcessing\Runtime\PostProcessingComponent.cs" />
     <Compile Include="Assets\Plugins\LowPolyOpenWorld\PostProcessing\Utilities\CustomMotionTexture\ExampleWheelController.cs" />
-    <Compile Include="Assets\Plugins\LowPolyOpenWorld\PostProcessing\Runtime\Components\BloomComponent.cs" />
     <Compile Include="Assets\Plugins\LowPolyOpenWorld\PostProcessing\Runtime\Components\VignetteComponent.cs" />
     <Compile Include="Assets\Plugins\LowPolyOpenWorld\PostProcessing\Runtime\Utils\MaterialFactory.cs" />
     <Compile Include="Assets\Plugins\LowPolyOpenWorld\PostProcessing\Runtime\Models\FogModel.cs" />
-    <Compile Include="Assets\Plugins\LowPolyOpenWorld\PostProcessing\Runtime\Models\DitheringModel.cs" />
     <Compile Include="Assets\Plugins\LowPolyOpenWorld\PostProcessing\Runtime\Components\TaaComponent.cs" />
+    <Compile Include="Assets\Plugins\LowPolyOpenWorld\PostProcessing\Runtime\Components\ScreenSpaceReflectionComponent.cs" />
+    <Compile Include="Assets\Plugins\LowPolyOpenWorld\PostProcessing\Runtime\Models\VignetteModel.cs" />
+    <Compile Include="Assets\Plugins\LowPolyOpenWorld\PostProcessing\Runtime\Models\GrainModel.cs" />
+    <Compile Include="Assets\Plugins\LowPolyOpenWorld\PostProcessing\Runtime\PostProcessingModel.cs" />
+    <Compile Include="Assets\Plugins\LowPolyOpenWorld\PostProcessing\Runtime\PostProcessingProfile.cs" />
+    <Compile Include="Assets\Plugins\LowPolyOpenWorld\PostProcessing\Runtime\Components\GrainComponent.cs" />
+    <Compile Include="Assets\Plugins\LowPolyOpenWorld\PostProcessing\Runtime\PostProcessingContext.cs" />
+    <Compile Include="Assets\Plugins\LowPolyOpenWorld\PostProcessing\Runtime\Components\MotionBlurComponent.cs" />
+    <Compile Include="Assets\Plugins\LowPolyOpenWorld\PostProcessing\Runtime\Attributes\MinAttribute.cs" />
+    <Compile Include="Assets\Plugins\LowPolyOpenWorld\PostProcessing\Runtime\Models\UserLutModel.cs" />
+    <Compile Include="Assets\Plugins\LowPolyOpenWorld\PostProcessing\Runtime\Components\BloomComponent.cs" />
+    <Compile Include="Assets\Plugins\LowPolyOpenWorld\PostProcessing\Runtime\Models\MotionBlurModel.cs" />
+    <Compile Include="Assets\Plugins\LowPolyOpenWorld\PostProcessing\Runtime\Components\UserLutComponent.cs" />
+    <Compile Include="Assets\Plugins\LowPolyOpenWorld\PostProcessing\Runtime\Models\AmbientOcclusionModel.cs" />
+    <Compile Include="Assets\Plugins\LowPolyOpenWorld\PostProcessing\Runtime\Components\DitheringComponent.cs" />
+    <Compile Include="Assets\Plugins\LowPolyOpenWorld\PostProcessing\Runtime\Utils\RenderTextureFactory.cs" />
+    <Compile Include="Assets\Plugins\LowPolyOpenWorld\PostProcessing\Runtime\Models\BuiltinDebugViewsModel.cs" />
+    <Compile Include="Assets\Plugins\LowPolyOpenWorld\PostProcessing\Runtime\PostProcessingComponent.cs" />
+    <Compile Include="Assets\Plugins\LowPolyOpenWorld\PostProcessing\Runtime\Components\EyeAdaptationComponent.cs" />
+    <Compile Include="Assets\Plugins\LowPolyOpenWorld\PostProcessing\Runtime\Models\ChromaticAberrationModel.cs" />
+    <Compile Include="Assets\Plugins\LowPolyOpenWorld\PostProcessing\Runtime\Models\ColorGradingModel.cs" />
+    <Compile Include="Assets\Plugins\LowPolyOpenWorld\PostProcessing\Runtime\Models\ScreenSpaceReflectionModel.cs" />
+    <Compile Include="Assets\Plugins\LowPolyOpenWorld\PostProcessing\Runtime\Components\DepthOfFieldComponent.cs" />
+    <Compile Include="Assets\Plugins\LowPolyOpenWorld\PostProcessing\Runtime\Components\ColorGradingComponent.cs" />
+    <Compile Include="Assets\Plugins\LowPolyOpenWorld\PostProcessing\Runtime\Components\FogComponent.cs" />
+    <Compile Include="Assets\Plugins\LowPolyOpenWorld\PostProcessing\Runtime\Models\BloomModel.cs" />
+    <Compile Include="Assets\Plugins\LowPolyOpenWorld\PostProcessing\Runtime\Models\DepthOfFieldModel.cs" />
+    <Compile Include="Assets\Plugins\LowPolyOpenWorld\PostProcessing\Runtime\Attributes\TrackballAttribute.cs" />
+    <Compile Include="Assets\Plugins\LowPolyOpenWorld\PostProcessing\Runtime\Components\AmbientOcclusionComponent.cs" />
+    <Compile Include="Assets\Plugins\LowPolyOpenWorld\PostProcessing\Runtime\Models\AntialiasingModel.cs" />
+    <Compile Include="Assets\Plugins\LowPolyOpenWorld\PostProcessing\Runtime\Models\DitheringModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Plugins\LowPolyOpenWorld\PostProcessing\Resources\Shaders\ScreenSpaceReflection.shader" />
@@ -145,6 +145,7 @@
     <None Include="Assets\Plugins\LowPolyOpenWorld\PostProcessing\Resources\Shaders\Bloom.cginc" />
     <None Include="Assets\Plugins\LowPolyOpenWorld\PostProcessing\Editor Resources\Monitors\WaveformCompute.compute" />
     <None Include="Assets\Plugins\LowPolyOpenWorld\PostProcessing\Resources\Shaders\DepthOfField.cginc" />
+    <None Include="Assets\Plugins\LitJSON.dll" />
     <None Include="Assets\Plugins\LowPolyOpenWorld\Nature\Demo\Readme.txt" />
   </ItemGroup>
   <ItemGroup>
@@ -375,6 +376,9 @@
     </Reference>
     <Reference Include="UnityEditor.UnityConnectModule">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1c1\Editor\Data\Managed\UnityEngine\UnityEditor.UnityConnectModule.dll</HintPath>
+    </Reference>
+    <Reference Include="LitJSON">
+      <HintPath>Assets\Plugins\LitJSON.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1c1\Editor\Data\PlaybackEngines\iOSSupport\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
