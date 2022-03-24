@@ -53,16 +53,29 @@
     <UnityVersion>2020.3.30f1c1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Assets\Script\Reference\GroudCheck.cs" />
-    <Compile Include="Assets\Script\PlayerManager.cs" />
-    <Compile Include="Assets\Script\Reference\SceneContoller.cs" />
-    <Compile Include="Assets\Script\Reference\Footstep.cs" />
-    <Compile Include="Assets\Script\Reference\TimeMove.cs" />
-    <Compile Include="Assets\Script\Reference\FirstPersonMove.cs" />
-    <Compile Include="Assets\Script\Scirpts\Trap.cs" />
+    <Compile Include="Assets\Script\RythemSystem.cs" />
+    <Compile Include="Assets\Script\MouseMove.cs" />
+    <Compile Include="Assets\Script\TimeManager.cs" />
+    <Compile Include="Assets\Script\TerrainGenerator.cs" />
+    <Compile Include="Assets\Script\JsonSaver.cs" />
+    <Compile Include="Assets\Script\TimeListener\SpeedParticles.cs" />
+    <Compile Include="Assets\Script\Trap.cs" />
+    <Compile Include="Assets\Script\NoteKey.cs" />
+    <Compile Include="Assets\Script\TimeListener\RotateClock.cs" />
+    <Compile Include="Assets\Script\testdata.cs" />
+    <Compile Include="Assets\Script\SceneContoller.cs" />
+    <Compile Include="Assets\Script\Footstep.cs" />
+    <Compile Include="Assets\Script\CommandCube.cs" />
+    <Compile Include="Assets\Script\PlayerMove.cs" />
+    <Compile Include="Assets\Script\TimeListener\ExistObject.cs" />
+    <Compile Include="Assets\Script\Item.cs" />
+    <Compile Include="Assets\Script\BookGenerator.cs" />
+    <Compile Include="Assets\Script\DebugWIndow.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Audio\Nature Sound FX\__Gift__\Weapons SFX\Weapons SFX Full Package.txt" />
+    <None Include="Assets\Images\Material reference\Wood-Textures\Licence.txt" />
+    <None Include="Assets\Images\Material reference\uploads_files_3121299_CC0+-+Paint+Brush+3\Read me.txt" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -292,6 +305,15 @@
     </Reference>
     <Reference Include="UnityEditor.UnityConnectModule">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1c1\Editor\Data\Managed\UnityEngine\UnityEditor.UnityConnectModule.dll</HintPath>
+    </Reference>
+    <Reference Include="LitJSON">
+      <HintPath>Assets\Plugins\LitJSON.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.iOS.Extensions.Xcode">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1c1\Editor\Data\PlaybackEngines\iOSSupport\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.iOS.Extensions.Common">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1c1\Editor\Data\PlaybackEngines\iOSSupport\UnityEditor.iOS.Extensions.Common.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1c1\Editor\Data\NetStandard\ref\2.0.0\netstandard.dll</HintPath>
