@@ -56,4 +56,7 @@ public class Item : ScriptableObject
     {
         return string.Format("Object type: Item, name = {0}, info ={1}, weight={2}, key = {3}",_title,_info,_weight,_key);
     }
+    public Item DeepCopy() {
+        return new Item(_title,_info,_icon,_mesh,_weight,_key);
+    }
 }

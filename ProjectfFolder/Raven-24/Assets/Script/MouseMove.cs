@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class MouseMove: MonoBehaviour
 {
@@ -19,6 +20,11 @@ public class MouseMove: MonoBehaviour
     public bool isMoving;
     public int focusSpeed;
 
+    // info grabber
+    public Text title;
+    public float textShowTimer;
+    public float textShowTimeMax;
+
     // ray cast objects
     Ray mouseRay;
     RaycastHit rayHit;
@@ -33,6 +39,12 @@ public class MouseMove: MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
+        if (textShowTimer>0) {
+            textShowTimer -= Time.deltaTime;
+        }
+        else {
+            title.text = "";
+        }
         if (isMoving)
         {
             playerMove.transform.position = Vector3.Lerp(playerMove.transform.position, targetTransform.position, Time.deltaTime*focusSpeed);
@@ -61,7 +73,11 @@ public class MouseMove: MonoBehaviour
                         targetTransform = hit.transform;
                         playerMove.freeze = true;
                     }
-
+                    else if (hit.tag == "Item")
+                    {
+                        title.text = hit.GetComponent<ItemHandle>().item._title;
+                        textShowTimer = textShowTimeMax;
+                    }
                 }
             }  
         }
