@@ -4,7 +4,7 @@
 
  
 
-The room is quite small, barely enough space to fit that of an adult, one could only Imagine a child living here. 
+The room is quite small, barely enough space to fit that of an adult, one could only Imagine a child living here.  
 
  
 
@@ -16,7 +16,7 @@ Silent clear tone of the piano floats in the background, the solemn posture of a
 
  
 
-A true artist setting the mood and color for this grayish scenery. 
+A true artist setting the mood and color for this grayish scenery.  
 
  
 

@@ -62,7 +62,42 @@ Strategy:
 
 1. Find pieces 
 
-2.  Win the game               
+
+
+**Mars, acted In the name of love; His standard white; King with reason; Queen, will; Bishop, thoughts; Knight,  sweet praises; Rook, flaring desires;  Pawn provides loyal services.** 
+
+****
+
+**Venus, fought In the name of glory; Her standard black. King with honor; Queen, beauty; Bishop, glances; Knights, deserved disdain; Rook, cautious reserve; Pawn took graceful courtesy.**
+
+
+
+### **White**
+
+- King with reason:  in kant's book pure reason
+- Queen will: 
+- Bishop thoughts:
+- Knights sweet praises:
+- Rooks desire:
+- pawn loyal services
+
+
+
+### **Black** 
+
+- King 👑 with honor:
+
+- Queen of beauty:
+- Bishop glances:
+- Knights disdain:
+- Rooks reserve:
+- pawn graceful courtesy:
+
+
+
+
+
+2.Win the game               
 
    
 

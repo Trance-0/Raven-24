@@ -26,10 +26,14 @@ That’s why I’m so glad I have chance to play with her.
 
  
 
-To be honest, it’s not the game itself that’s interesting, I never really expected her to win in first place. It’s mostly me playing with myself in my mind. 
+To be honest, it’s not the game itself that’s interesting, I never really expected her to win in first place, and expected a game where its just solely my mind playing against myself.  
+
+
+
+Yet, somehow she exceed that assumption.  HaHa what a pleasant surprise, I had no idea how she did it.  I thought I knew everything, such sudden loss brought back subtle old feelings I haven't felt in a while, those that deviates from those bland emotions.
 
  
 
-But it was interesting nevertheless. It’s been a long time since I ever actually played with anyone, and it seems like she is really enjoying it. I like laughing with her, though it is also selfish for me to do so.
+It’s been a long time since I ever actually played with anyone, and it seems like she is really enjoying it. I like laughing with her, though it is also selfish for me to do so.
 
  
