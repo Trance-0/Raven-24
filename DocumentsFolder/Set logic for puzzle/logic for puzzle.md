@@ -259,17 +259,16 @@ Strategies: taking photos of the past and seeing what happend in the room ,
 
 
 
+Be a librarian and order the book
 
 
 
 
-Game 4  Piano
 
 
 
 
 
-Meditation through chaos-----> Meditation through consistency
 
 
 
@@ -317,113 +316,6 @@ Meditation through chaos-----> Meditation through consistency
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Game 2 Zen garden       
-
-
-
-Player:  you
-
-
-
-
-
-strategies: Shakyamuni, also 7 days             the limit of your  puzzle solving is a week per 7 days of awakening
-
-
-
-pay off:  still in time while the entire scenery changes
-
-
-
-
-
-
-
-
-
-Game 3  What you see is not what is
-
-
-
-
-
-
-
-
-
-pay off: using time to change object into more abstract forms, paintings into its original paintings like hegel or
-
-
-
-
-
-
-
-
-
-
-
-Game 4 music
-
-
-
-strategies: rhythm game
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-pay off: beyond time 
-
-
-
-
-
-
-
-game 5 memories
-
-
-
-strategies: camera 
-
-
-
-pay off: lock time
-
-
-
-
-
-Rose  
 
 
 
