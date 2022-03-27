@@ -13,8 +13,9 @@ MonoBehaviour:
   m_Name: BookHardCover
   m_EditorClassIdentifier: 
   _title: 
-  _info: 
+  _info: Book with hard cover
+  _childs: []
   _icon: {fileID: 21300000, guid: 37dd4f329763efe41a6e89bc69156fff, type: 3}
-  _mesh: {fileID: 8631508900311301396, guid: c2abd21fb04b3c64fa194839394a2fe0, type: 3}
-  _weight: 0.2
+  _mesh: {fileID: 4686853249753032530, guid: c2abd21fb04b3c64fa194839394a2fe0, type: 3}
+  _weight: 0.08
   _key: 

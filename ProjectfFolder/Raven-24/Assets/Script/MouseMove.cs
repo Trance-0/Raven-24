@@ -11,6 +11,7 @@ public class MouseMove: MonoBehaviour
   
     public GameObject mouseMove;
     public PlayerMove playerMove;
+    public InventoryManager inventoryManager;
     // transform to restore from moving
     public Transform originalTransform;
     public Transform targetTransform;
@@ -66,7 +67,8 @@ public class MouseMove: MonoBehaviour
                     string name = hit.name;
                     Debug.Log(string.Format("Mouse raycast on object {0}", name));
 
-                    if (hit.tag == "AccessPoint") {
+                    if (hit.tag == "AccessPoint")
+                    {
                         isFocus = true;
                         isMoving = true;
                         originalTransform = mouseMove.transform;
@@ -75,7 +77,15 @@ public class MouseMove: MonoBehaviour
                     }
                     else if (hit.tag == "Item")
                     {
-                        title.text = hit.GetComponent<ItemHandle>().item._title;
+                        if (hit.GetComponent<ItemHandle>().item != null)
+                        {
+                            inventoryManager.AddItem(hit.GetComponent<ItemHandle>());
+                        }
+                        else {
+                            inventoryManager.PutItem(hit.GetComponent<ItemHandle>());
+                        }
+                    }
+                    else {
                         textShowTimer = textShowTimeMax;
                     }
                 }

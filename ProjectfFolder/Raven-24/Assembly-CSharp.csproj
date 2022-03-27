@@ -55,6 +55,8 @@
   <ItemGroup>
     <Compile Include="Assets\Script\RythemSystem.cs" />
     <Compile Include="Assets\Script\MouseMove.cs" />
+    <Compile Include="Assets\Script\ObjectFollow.cs" />
+    <Compile Include="Assets\Script\ItemHandle.cs" />
     <Compile Include="Assets\Script\TimeManager.cs" />
     <Compile Include="Assets\Script\TerrainGenerator.cs" />
     <Compile Include="Assets\Script\Item.cs" />
@@ -71,8 +73,9 @@
     <Compile Include="Assets\Script\TimeListener\ExistObject.cs" />
     <Compile Include="Assets\Script\CommandCube.cs" />
     <Compile Include="Assets\Script\PlayerMove.cs" />
-    <Compile Include="Assets\Script\ItemHandle.cs" />
-    <Compile Include="Assets\Script\ObjectFollow.cs" />
+    <Compile Include="Assets\Script\InventoryManager.cs" />
+    <Compile Include="Assets\Script\ItemUI.cs" />
+    <Compile Include="Assets\Script\DataManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Audio\Nature Sound FX\__Gift__\Weapons SFX\Weapons SFX Full Package.txt" />
