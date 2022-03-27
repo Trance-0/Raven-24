@@ -26,7 +26,7 @@ That’s why I’m so glad I have chance to play with her.
 
  
 
-To be honest, it’s not the game itself that’s interesting, I never really expected her to win in first place, and expected a game where its just solely my mind playing against myself.  
+To be honest, it’s not the game itself that’s interesting since I never really expected her to win in first place. I thought it was gonna end up like the games I played for millions of times, a slow game between my mind and itself.
 
 
 

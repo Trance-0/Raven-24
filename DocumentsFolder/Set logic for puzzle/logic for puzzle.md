@@ -135,7 +135,13 @@ Player:  You
 
 
 
+
+
+
+
 Strategies:  1. Radio：understand reverse audio by reversing time.
+
+2. 
 
 
 
@@ -166,6 +172,14 @@ Player: you
 
 
 Strategies： Abstract painting
+
+
+
+go too before time tthings would become all abstract.
+
+
+
+when all other things are abstract others become more specific
 
 
 
@@ -260,6 +274,32 @@ Strategies: taking photos of the past and seeing what happend in the room ,
 
 
 Be a librarian and order the book
+
+
+
+
+
+
+
+### Game 7: End the end
+
+
+
+Take away the gun
+
+
+
+Lock the door from the rail
+
+
+
+Take away the lamp 
+
+
+
+Hide away the knife
+
+
 
 
 
