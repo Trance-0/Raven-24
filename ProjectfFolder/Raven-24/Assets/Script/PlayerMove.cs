@@ -40,7 +40,7 @@ public class PlayerMove: MonoBehaviour
         freeze = false;
         //lock the cursor to screen center and set it to invisible
         Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = false;
+        Cursor.visible = true;
     }
 
     // Update is called once per frame
@@ -56,7 +56,7 @@ public class PlayerMove: MonoBehaviour
         else
         {
             Cursor.lockState = CursorLockMode.Locked;
-            Cursor.visible = false;
+            Cursor.visible = true;
 
             // move camera with cursor
             horizontalAngle += Input.GetAxis("Mouse X") * rotateSpeed * Time.deltaTime;

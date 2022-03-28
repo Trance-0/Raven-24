@@ -61,6 +61,7 @@
     <Compile Include="Assets\Script\TerrainGenerator.cs" />
     <Compile Include="Assets\Script\Item.cs" />
     <Compile Include="Assets\Script\JsonSaver.cs" />
+    <Compile Include="Assets\Script\InventoryManager.cs" />
     <Compile Include="Assets\Script\TimeListener\SpeedParticles.cs" />
     <Compile Include="Assets\Script\Trap.cs" />
     <Compile Include="Assets\Script\NoteKey.cs" />
@@ -70,12 +71,12 @@
     <Compile Include="Assets\Script\BookGenerator.cs" />
     <Compile Include="Assets\Script\Footstep.cs" />
     <Compile Include="Assets\Script\DebugWIndow.cs" />
+    <Compile Include="Assets\Script\DataManager.cs" />
     <Compile Include="Assets\Script\TimeListener\ExistObject.cs" />
+    <Compile Include="Assets\Script\ItemUI.cs" />
     <Compile Include="Assets\Script\CommandCube.cs" />
     <Compile Include="Assets\Script\PlayerMove.cs" />
-    <Compile Include="Assets\Script\InventoryManager.cs" />
-    <Compile Include="Assets\Script\ItemUI.cs" />
-    <Compile Include="Assets\Script\DataManager.cs" />
+    <Compile Include="Assets\Script\ObjectMove.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Audio\Nature Sound FX\__Gift__\Weapons SFX\Weapons SFX Full Package.txt" />

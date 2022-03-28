@@ -9,7 +9,7 @@ public class ItemUI : MonoBehaviour
     public ItemUI self;
     public Image icon;
     public Button listener;
-    public Image highlightEffect;
+    public GameObject highlightEffect;
     public Item item;
     // Start is called before the first frame update
     void Start()
@@ -20,7 +20,13 @@ public class ItemUI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (inventoryManager.selected.item._key != self.item._key)
+        {
+            highlightEffect.SetActive(false);
+        }
+        else {
+            highlightEffect.SetActive(true);
+        }
     }
     public void SetSelfAsSelected() {
         if (inventoryManager.selected.item.Equals(self.item))

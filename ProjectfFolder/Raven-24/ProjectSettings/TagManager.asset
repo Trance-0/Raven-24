@@ -6,6 +6,8 @@ TagManager:
   tags:
   - AccessPoint
   - Item
+  - ItemHandle
+  - ObjectMove
   layers:
   - Default
   - TransparentFX

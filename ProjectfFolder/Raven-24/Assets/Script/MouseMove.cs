@@ -75,15 +75,13 @@ public class MouseMove: MonoBehaviour
                         targetTransform = hit.transform;
                         playerMove.freeze = true;
                     }
-                    else if (hit.tag == "Item")
+                    else if (hit.tag == "ItemHandle")
                     {
-                        if (hit.GetComponent<ItemHandle>().item != null)
-                        {
-                            inventoryManager.AddItem(hit.GetComponent<ItemHandle>());
-                        }
-                        else {
                             inventoryManager.PutItem(hit.GetComponent<ItemHandle>());
-                        }
+                    }
+                    else if (hit.tag =="Item") {
+                        ItemHandle parentHandle = hit.GetComponentInParent<ItemHandle>();
+                            inventoryManager.AddItem(parentHandle);
                     }
                     else {
                         textShowTimer = textShowTimeMax;

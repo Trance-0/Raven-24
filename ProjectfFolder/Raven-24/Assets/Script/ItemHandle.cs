@@ -37,7 +37,7 @@ public class ItemHandle : MonoBehaviour
     public Item PickItem() {
         Item result = item.DeepCopy();
         item = null;
-        Destroy(transform.GetChild(0));
+        Destroy(GetComponent<Transform>().GetChild(0).gameObject);
         return result;
     }
 }
