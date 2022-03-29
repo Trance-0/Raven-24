@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 5525218393680331107}
   m_Layer: 0
   m_Name: ItemHandle
-  m_TagString: ItemHandle
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -98,7 +98,9 @@ MonoBehaviour:
   item: {fileID: 11400000, guid: ff369715bb1f0d54a9e61070401f6f38, type: 2}
   key: 114514
   NullMaterial: {fileID: 2100000, guid: 9c6cd486d1b7e114e829085fc23af592, type: 2}
-  child: {fileID: 5525218391904676700}
+  keyshape: {fileID: 0}
+  lockshape: {fileID: 0}
+  instantiateOnStart: 0
 --- !u!1001 &2716360926342649532
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -162,6 +164,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+    - target: {fileID: 7575044696482348543, guid: 6dca073816876b44b8d54b30d97cdc94, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e0954f8d5b49803458e1ab28bfdd1561, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6dca073816876b44b8d54b30d97cdc94, type: 3}
 --- !u!1 &5525218391904676700 stripped

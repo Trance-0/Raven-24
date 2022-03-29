@@ -79,11 +79,9 @@ public class BookGenerator : MonoBehaviour
                 grabBook._mesh = newBook;
                 grabBook._key = IndexGenerator(16);
 
-                GameObject newItemHandel = Instantiate(itemHandlePF, self.transform);
+                GameObject newItemHandel = Instantiate(itemHandlePF, anchors[i].transform);
                 // reset item in handle
-                newItemHandel.GetComponent<ItemHandle>().PickItem();
-                newItemHandel.GetComponent<ItemHandle>().key = grabBook._key;
-                newItemHandel.GetComponent<ItemHandle>().PutItem(grabBook);
+                newItemHandel.GetComponent<ItemHandle>().ResetItem(grabBook);
                 newItemHandel.transform.Translate(new Vector3(transformRandomizer, 0, 0));
                 currentBookCount += grabBook._weight;
                 // allocate newbook to current pos

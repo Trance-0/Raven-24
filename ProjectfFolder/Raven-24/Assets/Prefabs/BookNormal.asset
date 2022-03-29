@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: BookNormal
   m_EditorClassIdentifier: 
   _title: 
-  _info: Book with normal cover
+  _info:
+  - An ordinary book with normal cover, no info gained form the book.
   _childs: []
   _icon: {fileID: 21300000, guid: 37dd4f329763efe41a6e89bc69156fff, type: 3}
   _mesh: {fileID: 1582593550581619151, guid: bebac857465d61545a600b291e482990, type: 3}

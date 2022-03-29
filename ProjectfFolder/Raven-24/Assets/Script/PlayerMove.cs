@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class PlayerMove: MonoBehaviour
 {
-    public bool freeze;
+    public bool isActive=true;
     // REMEMBER TO SET COLIDER WITH THE OBJECT WHERE SCRIPT IS IN!
     // DO NOT USE CAPSULE COLLIDER, USE BOX COLLIDER INSTEAD!
     public GameObject playerTransform;
@@ -37,7 +37,6 @@ public class PlayerMove: MonoBehaviour
     // Start is called before the first frame update
     void Start()  
     {
-        freeze = false;
         //lock the cursor to screen center and set it to invisible
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = true;
@@ -46,73 +45,76 @@ public class PlayerMove: MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        if (!freeze) { }
-        // exit on play
-        if (Input.GetKey(KeyCode.LeftAlt))
+        if (isActive)
         {
-            Cursor.lockState = CursorLockMode.Confined;
-            Cursor.visible = true;
-        }
-        else
-        {
-            Cursor.lockState = CursorLockMode.Locked;
-            Cursor.visible = true;
-
-            // move camera with cursor
-            horizontalAngle += Input.GetAxis("Mouse X") * rotateSpeed * Time.deltaTime;
-            verticalAngle += Input.GetAxis("Mouse Y") * rotateSpeed * Time.deltaTime;
-            if (verticalAngle > 80)
+            // exit on play
+            if (Input.GetKey(KeyCode.LeftAlt))
             {
-                verticalAngle = 80;
+                Cursor.lockState = CursorLockMode.Confined;
+                Cursor.visible = true;
             }
-            else if (verticalAngle < -60)
+            else
             {
-                verticalAngle = -60;
-            }
-        }
+                Cursor.lockState = CursorLockMode.Locked;
+                Cursor.visible = true;
 
-
-        // if the player is underwater
-        if (playerTransform.GetComponent<Transform>().position.y <= waterLevel)
-        {
-            onGround = false;
-        }
-        else
-        {
-            onGround = true;
-        }
-
-        // move player with arrow keys
-        //Debug.Log(string.Format("testing input: dx={0}, dy={1}", Input.GetAxis("Horizontal"), Input.GetAxis("Vertical")));
-        playerTransform.transform.position += Input.GetAxis("Horizontal") * moveSpeed * transform.right * Time.deltaTime;
-        playerTransform.transform.position += Input.GetAxis("Vertical") * moveSpeed * transform.forward * Time.deltaTime;
-        playerTransform.transform.rotation = Quaternion.Euler(0, horizontalAngle + startAngle, 0);
-
-        if (Input.GetKey(KeyCode.LeftShift)) {
-            playerTransform.GetComponent<Rigidbody>().AddForce(Vector3.down*10);
-        }
-
-        // jumping counter
-        if (cd >= 0)
-        {
-            cd--;
-        }
-        // if cd is cooled
-        else
-        {
-            // if player wants to jump
-            if (Input.GetKey(KeyCode.Space))
-            {
-                // jump on ground
-                if (onGround && grounded)
+                // move camera with cursor
+                horizontalAngle += Input.GetAxis("Mouse X") * rotateSpeed * Time.deltaTime;
+                verticalAngle += Input.GetAxis("Mouse Y") * rotateSpeed * Time.deltaTime;
+                if (verticalAngle > 80)
                 {
-                    playerTransform.GetComponent<Rigidbody>().AddForce(Vector3.up * 100 * jumpStrength);
-                    cd = cdMax;
+                    verticalAngle = 80;
                 }
-                // jump in water
-                if (!onGround)
+                else if (verticalAngle < -60)
                 {
-                    playerTransform.GetComponent<Rigidbody>().AddForce(Vector3.up * 100 * jumpStrength * waterFriction);
+                    verticalAngle = -60;
+                }
+            }
+
+
+            // if the player is underwater
+            if (playerTransform.GetComponent<Transform>().position.y <= waterLevel)
+            {
+                onGround = false;
+            }
+            else
+            {
+                onGround = true;
+            }
+
+            // move player with arrow keys
+            //Debug.Log(string.Format("testing input: dx={0}, dy={1}", Input.GetAxis("Horizontal"), Input.GetAxis("Vertical")));
+            playerTransform.transform.position += Input.GetAxis("Horizontal") * moveSpeed * transform.right * Time.deltaTime;
+            playerTransform.transform.position += Input.GetAxis("Vertical") * moveSpeed * transform.forward * Time.deltaTime;
+            playerTransform.transform.rotation = Quaternion.Euler(0, horizontalAngle + startAngle, 0);
+
+            if (Input.GetKey(KeyCode.LeftShift))
+            {
+                playerTransform.GetComponent<Rigidbody>().AddForce(Vector3.down * 10);
+            }
+
+            // jumping counter
+            if (cd >= 0)
+            {
+                cd--;
+            }
+            // if cd is cooled
+            else
+            {
+                // if player wants to jump
+                if (Input.GetKey(KeyCode.Space))
+                {
+                    // jump on ground
+                    if (onGround && grounded)
+                    {
+                        playerTransform.GetComponent<Rigidbody>().AddForce(Vector3.up * 100 * jumpStrength);
+                        cd = cdMax;
+                    }
+                    // jump in water
+                    if (!onGround)
+                    {
+                        playerTransform.GetComponent<Rigidbody>().AddForce(Vector3.up * 100 * jumpStrength * waterFriction);
+                    }
                 }
             }
         }

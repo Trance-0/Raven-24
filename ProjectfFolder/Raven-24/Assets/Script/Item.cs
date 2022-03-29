@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class Item : ScriptableObject
 {
     public string _title;
-    public string _info;
+    public List<string> _info;
     public List<Item> _childs;
     // icon to show in inventory list
     public Sprite _icon;
@@ -19,7 +19,7 @@ public class Item : ScriptableObject
     public string _key;
     public void AssignItem(string title,string info, Sprite icon, GameObject mesh,List<Item>childs=null,float weight=0,string key="") {
         _title = title;
-        _info=info;
+        _info[0]=info;
         _icon = icon;
         _mesh = mesh;
         _weight = weight;
@@ -29,7 +29,7 @@ public class Item : ScriptableObject
 
     public override string ToString()
     {
-        return string.Format("Object type: Item, name = {0}, info ={1}, weight={2}, key = {3}",_title,_info,_weight,_key);
+        return string.Format("Object type: Item, name = {0}, info ={1}, weight={2}, key = {3}",_title,_info[0],_weight,_key);
     }
     public Item DeepCopy() {
         return Instantiate<Item>(this);

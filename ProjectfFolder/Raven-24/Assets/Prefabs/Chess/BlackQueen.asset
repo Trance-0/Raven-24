@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9d7de75090e16645b3672679692c763, type: 3}
+  m_Name: BlackQueen
+  m_EditorClassIdentifier: 
+  _title: Queen of beauty
+  _info: []
+  _childs: []
+  _icon: {fileID: 21300000, guid: 86e8c99dbc2afaa458822b4a59797ff8, type: 3}
+  _mesh: {fileID: 1178070434260126996, guid: ecbe17f3aa9c6ae4e8787c6dd7593282, type: 3}
+  _weight: 0.0535
+  _key: 24b8b198b6f55c9c

@@ -6,7 +6,9 @@ using UnityEngine.UI;
 public class InventoryManager : MonoBehaviour
 {
     // global config
+    public bool isActive;
     public PlayerMove playerMove;
+    public MouseMove mouseMove;
     public DataManager dataManager;
 
     //Inventory UI
@@ -20,25 +22,24 @@ public class InventoryManager : MonoBehaviour
     public Text detailInfo;
 
     // ALL THE MESH IN ITEM MUST HAVE ITEMHANDLE TO INSTANTIATE THEM TO 3D SPACE
-    public List<Item> items;
     // this is used to instantiate object in 2D list;
-    public ItemUI itenUIPF;
+    public GameObject itenUIPF;
 
-    public ItemUI selected;
+    public GameObject selected;
     // Start is called before the first frame update
     void Start()
     {
-        Invoke("InitializeInventoryList",1f);
+        Invoke("UpdateItem",1f);
         ShowDetail(false);
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
-        
     }
 
     public void UpdateItem() {
+        List<Item> items = dataManager.inventory;
         for (int i = self.transform.childCount - 1; i >= 0; i--)
         {
             Destroy(self.transform.GetChild(i).gameObject);
@@ -60,48 +61,54 @@ public class InventoryManager : MonoBehaviour
         }
     }
     public void CreateItemUI(Item i) {
-        ItemUI newItemUI = Instantiate(itenUIPF, self.transform);
-        newItemUI.self = newItemUI;
-        newItemUI.inventoryManager = self.GetComponent<InventoryManager>();
-        newItemUI.item = i;
-        newItemUI.icon.sprite = i._icon;
+        GameObject newItemUI = Instantiate(itenUIPF, self.transform);
+        newItemUI.GetComponent<ItemUI>().self = newItemUI;
+        newItemUI.GetComponent<ItemUI>().inventoryManager = self.GetComponent<InventoryManager>();
+        newItemUI.GetComponent<ItemUI>().item = i;
+        newItemUI.GetComponent<ItemUI>().icon.sprite = i._icon;
     }
 
     public void ShowDetail(bool state)
     {
-        detailInfo.text = selected.item._info;
-        detailTitle.text = selected.item._title;
-        detailImage.sprite = selected.item._icon;
-            detailWindow.SetActive(state);
-            detailWindow.SetActive(state);
-            if (state&&selected.item._childs!=null)
-            {
-                UpdateChildItem(selected.item);
+        detailWindow.SetActive(state);
+        playerMove.isActive = !state;
+        mouseMove.isActive = !state;
+        if (state)
+        {
+            string simpleRender = "";
+            foreach(string i in selected.GetComponent<ItemUI>().item._info){
+                simpleRender += i + "\n\n";
             }
-            else {
-                UpdateItem();
+            detailInfo.text = simpleRender;
+            detailTitle.text = selected.GetComponent<ItemUI>().item._title;
+            detailImage.sprite = selected.GetComponent<ItemUI>().item._icon;
+            if (selected.GetComponent<ItemUI>().item._childs.Count > 0)
+            {
+                UpdateChildItem(selected.GetComponent<ItemUI>().item);
+                selected = null;
+            }
+        }
+        else
+        {
+            UpdateItem();
         }
     }
 
     public void AddItem(ItemHandle fullItem) {
         if (fullItem.item != null)
         {
-            items.Add(fullItem.item);
+            dataManager.inventory.Add(fullItem.PickItem());
             fullItem.item = null;
-            //save inventory
-            dataManager.inventory = items;
             UpdateItem();
         }
     }
 
     public void PutItem(ItemHandle emptyItem) {
-        if (emptyItem.PutItem(selected.item)) {
+        if (emptyItem.PutItem(selected.GetComponent<ItemUI>().item)) {
+            dataManager.inventory.Remove(selected.GetComponent<ItemUI>().item);
             selected = null;
+            UpdateItem();
         }
     }
-
-    public void InitializeInventoryList() {
-        items = dataManager.inventory;
-        UpdateItem();
-    }
+    
 }

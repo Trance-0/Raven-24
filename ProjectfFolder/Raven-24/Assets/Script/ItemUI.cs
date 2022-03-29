@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class ItemUI : MonoBehaviour
 {
     public InventoryManager inventoryManager;
-    public ItemUI self;
+    public GameObject self;
     public Image icon;
     public Button listener;
     public GameObject highlightEffect;
@@ -18,24 +18,23 @@ public class ItemUI : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-        if (inventoryManager.selected.item._key != self.item._key)
-        {
-            highlightEffect.SetActive(false);
-        }
-        else {
-            highlightEffect.SetActive(true);
-        }
+        
     }
     public void SetSelfAsSelected() {
-        if (inventoryManager.selected.item.Equals(self.item))
+        if (inventoryManager.selected!=null&&inventoryManager.selected.GetComponent<ItemUI>().item.Equals(item))
         {
             inventoryManager.ShowDetail(true);
         }
         else
         {
+            if (inventoryManager.selected != null)
+            {
+                inventoryManager.selected.GetComponent<ItemUI>().highlightEffect.SetActive(false);
+            }
             inventoryManager.selected = self;
+            self.GetComponent<ItemUI>().highlightEffect.SetActive(true);
         }
     }
 }

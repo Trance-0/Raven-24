@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9d7de75090e16645b3672679692c763, type: 3}
+  m_Name: Diary
+  m_EditorClassIdentifier: 
+  _title: The stories beyond time
+  _info:
+  - A collection of pages about the events happend on my friend.
+  _childs:
+  - {fileID: 11400000, guid: 1703d27a274702a408754a35ce1b6206, type: 2}
+  - {fileID: 11400000, guid: 27a9d7afe98e7964f9a1135381713edc, type: 2}
+  - {fileID: 11400000, guid: da0374f019a580f47a4e5353885648f7, type: 2}
+  - {fileID: 11400000, guid: bc8b0735c77a65643b2b6c49a4986bb8, type: 2}
+  - {fileID: 11400000, guid: ffeaf6aa05ef090498a77b2b85ca49a4, type: 2}
+  - {fileID: 11400000, guid: 3829ee5f90de10449a90274591c6f239, type: 2}
+  - {fileID: 11400000, guid: c71de86470286144cbac57d3d9799d3e, type: 2}
+  - {fileID: 11400000, guid: e8ec63d8ba3c54740a9c74851f5ddacc, type: 2}
+  - {fileID: 11400000, guid: 77655d91d95888342916ee1b14f45a73, type: 2}
+  - {fileID: 11400000, guid: f4fcd1acb89662a4899741d0b5cceca3, type: 2}
+  _icon: {fileID: 21300000, guid: 98d9c467f02a75941993163c880110f4, type: 3}
+  _mesh: {fileID: 6318293020354905311, guid: cec3d1b6b0ea0b541a361a974eba2847, type: 3}
+  _weight: 99999
+  _key: 0
