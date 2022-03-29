@@ -83,6 +83,10 @@ public class MouseMove: MonoBehaviour
                         ItemHandle parentHandle = hit.GetComponentInParent<ItemHandle>();
                             inventoryManager.AddItem(parentHandle);
                     }
+                    else if (hit.tag == "ObjectMove")
+                    {
+                        hit.GetComponentInParent<ObjectMove>().Move();
+                    }
                     else {
                         textShowTimer = textShowTimeMax;
                     }
