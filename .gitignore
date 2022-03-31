@@ -1,6 +1,7 @@
 ###
 # Unity folders and files
 ###
+
 [Aa]ssets/AssetStoreTools*
 [Bb]uild/
 [Ll]ocal[Cc]ache/
@@ -42,3 +43,10 @@ Icon?
 ehthumbs.db
 Thumbs.db
 ArtifactDB
+
+### 
+# Files that unable to push
+###
+
+3DModelFolder/Raven-24Models/Character.blend*
+ProjectfFolder/Raven-24/Library/ArtifactDB*
