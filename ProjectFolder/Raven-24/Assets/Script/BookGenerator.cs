@@ -31,7 +31,6 @@ public class BookGenerator : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       
     }
 
     public string IndexGenerator(int length) {
@@ -58,40 +57,56 @@ public class BookGenerator : MonoBehaviour
                 Debug.Log(string.Format("Genenrating book {0}",grabBook.ToString()));
 
                 // instantiate
-                // instantiate object
-                GameObject newBook = Instantiate(grabBook._mesh);
-                // assign item value
+                // instantiate object mesh
+   // assign item value
                 
-                // Randomizer to randomize item handel!
+                // Randomizer to randomize item!
                 float transformRandomizer = Random.Range(transformRandomizerMin,transformRandomizerMax);
                 float scaleRandomizerZ = Random.Range(scaleRandomizerMin, scaleRandomizerMax);
                 float scaleRandomizerY = Random.Range(scaleRandomizerMin, scaleRandomizerMax);
                 float scaleRandomizerX = Random.Range(scaleRandomizerMin, scaleRandomizerMax);
-               
-                newBook.transform.localScale = new Vector3(scaleRandomizerX,scaleRandomizerY,scaleRandomizerZ);
-                // change weight by y scale
+               // modify book data
                 grabBook._weight *= scaleRandomizerY;
-                // rename the book
                 grabBook._title = "Book of Unknown";
-                // assign a random color for cover
-                Material targetMaterial=newBook.GetComponent<MeshRenderer>().material;
-                targetMaterial.color = Random.ColorHSV(0f, 1f, 0f, 1f, 0f, 0.5f);
-                grabBook._mesh = newBook;
                 grabBook._key = IndexGenerator(16);
 
-                GameObject newItemHandel = Instantiate(itemHandlePF, anchors[i].transform);
+                // modify item handle
+                GameObject newItemHandle = Instantiate(itemHandlePF, self.transform);
+                newItemHandle.transform.position = anchors[i].position;
+                newItemHandle.transform.rotation = anchors[i].rotation;
                 // reset item in handle
-                newItemHandel.GetComponent<ItemHandle>().ResetItem(grabBook);
-                newItemHandel.transform.Translate(new Vector3(transformRandomizer, 0, 0));
-                currentBookCount += grabBook._weight;
+                newItemHandle.GetComponent<ItemHandle>().item=grabBook;
+                newItemHandle.GetComponent<ItemHandle>().key = grabBook._key;
+                foreach (Transform child in newItemHandle.transform) {
+                    Destroy(child.gameObject);
+                }
+
+                // modify mesh of book
+                GameObject newBook = Instantiate(grabBook._mesh,newItemHandle.transform);
+                newItemHandle.GetComponent<ItemHandle>().keyshape = newBook;
+                newBook.transform.localPosition =Vector3.zero;
+               newBook.transform.localScale = new Vector3(scaleRandomizerX, scaleRandomizerY, scaleRandomizerZ);
+                newBook.GetComponent<Rigidbody>().isKinematic = true;
+                Material targetMaterial = newBook.GetComponent<MeshRenderer>().material;
+                targetMaterial.color = Random.ColorHSV(0f, 1f, 0f, 1f, 0f, 0.5f);
+                grabBook._mesh = newBook;
+
                 // allocate newbook to current pos
-                newItemHandel.transform.position = currentPos.position;
-                newItemHandel.transform.SetParent(self.transform);
-                generatedBooks.Add(newItemHandel);
+                newItemHandle.transform.position = currentPos.position;
+                newItemHandle.transform.Translate(new Vector3(transformRandomizer, 0, 0));
+
+                // locate the data
+                currentBookCount += grabBook._weight;
+                generatedBooks.Add(newItemHandle);
                 currentPos.Translate(new Vector3(grabBook._weight,0, 0));
-
-
             }
+        }
+        Invoke("FreeBooks",1f);
+    }
+    private void FreeBooks() {
+        foreach (GameObject i in generatedBooks)
+        {
+            i.GetComponent<ItemHandle>().keyshape.GetComponent<Rigidbody>().isKinematic = false;
         }
     }
 }

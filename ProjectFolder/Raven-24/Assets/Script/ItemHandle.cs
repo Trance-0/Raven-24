@@ -73,7 +73,7 @@ public class ItemHandle : MonoBehaviour
         lockshape.transform.rotation = keyshape.transform.rotation;
         lockshape.transform.localScale = keyshape.transform.localScale;
         lockshape.GetComponent<Rigidbody>().isKinematic = true;
-        lockshape.GetComponent<BoxCollider>().isTrigger = true;
+        //lockshape.GetComponent<BoxCollider>().isTrigger = true;
         return result;
     }
 }

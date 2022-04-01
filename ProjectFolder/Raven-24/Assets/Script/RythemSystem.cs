@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class RythemSystem : MonoBehaviour
 {
     // music source
-    public List<NoteKey> notes;
+    public List<AudioStretch> notes;
     // input methods
     public List<KeyCode> keyNotes;
     public List<GameObject> buttonNotes;
@@ -17,7 +17,7 @@ public class RythemSystem : MonoBehaviour
     public List<GameObject> noteArray;
 
     public int mode;
-    public int duration;
+    public float duration;
 
     private int noteCount;
     // Start is called before the first frame update
@@ -33,7 +33,7 @@ public class RythemSystem : MonoBehaviour
     void Update()
     {
         for (int i=0;i<keyNotes.Count;i++) {
-            if (Input.GetKey(keyNotes[i])==true) {
+            if (Input.GetKeyDown(keyNotes[i])==true) {
                 CallKey(i);
             }
         }
@@ -44,6 +44,6 @@ public class RythemSystem : MonoBehaviour
         }
     }
     public void CallKey(int index) {
-        notes[index].GetComponent<NoteKey>().Play(duration);
+        notes[index].GetComponent<AudioStretch>().Play(duration);
     }
 }

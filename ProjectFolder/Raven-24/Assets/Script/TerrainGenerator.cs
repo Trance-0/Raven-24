@@ -37,8 +37,8 @@ public class TerrainGenerator : MonoBehaviour
                 float proposal = UnityEngine.Random.Range(0, resolution);
                 if (proposal > threshold) {
                     //Debug.Log(string.Format("Creating cube {0}, with pos {1},{2}...", cubeCount, i, j));
-                    int y_scale= UnityEngine.Random.Range(y_base, y_end);
-                    GameObject newCube = Instantiate(cubePF, new Vector3(i,y_scale/2, j), Quaternion.identity, terrainGenerator.transform);
+                    int y_scale=Math.Abs( UnityEngine.Random.Range(10,(y_base- y_end)));
+                    GameObject newCube = Instantiate(cubePF, new Vector3(i,y_start+y_scale/2, j), Quaternion.identity, terrainGenerator.transform);
                     Material temp = newCube.GetComponent<MeshRenderer>().material;
                     Color rgbC, hsvC;
                     float H, S, V;
