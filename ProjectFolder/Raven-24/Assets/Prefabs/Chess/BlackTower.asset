@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9d7de75090e16645b3672679692c763, type: 3}
+  m_Name: BlackTower
+  m_EditorClassIdentifier: 
+  _title: Rooks reserve
+  _info: []
+  _childs: []
+  _icon: {fileID: 21300000, guid: d7c137b12de35bb41adb6236809347ef, type: 3}
+  _mesh: {fileID: 2378971890129730924, guid: 4f4451f8a1f56c647aa3273f8abc1fc2, type: 3}
+  _weight: 0.0535
+  _key: 4f8aeb543507bc33

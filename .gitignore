@@ -1,6 +1,7 @@
 ###
 # Unity folders and files
 ###
+
 [Aa]ssets/AssetStoreTools*
 [Bb]uild/
 [Ll]ocal[Cc]ache/
@@ -8,8 +9,10 @@
 [Oo]bj/
 [Tt]emp/
 [Uu]nityGenerated/
+
 # file on crash reports
 sysinfo.txt
+
 # Unity3D generated meta files
 *.pidb.meta
 
@@ -39,3 +42,11 @@ sysinfo.txt
 Icon?
 ehthumbs.db
 Thumbs.db
+ArtifactDB
+
+### 
+# Files that unable to push
+###
+
+3DModelFolder/Raven-24Models/Character.blend*
+ProjectFolder/Raven-24/Library/ArtifactDB*
