@@ -75,7 +75,7 @@ Strategy:
 ### **White**
 
 - King with reason:  in kant's book pure reason
-- Queen will: 
+- Queen will:  
 - Bishop thoughts:
 - Knights sweet praises:
 - Rooks desire:
