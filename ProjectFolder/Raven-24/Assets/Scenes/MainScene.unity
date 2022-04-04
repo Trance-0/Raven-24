@@ -34775,7 +34775,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1900578879}
   m_Direction: 2
   m_Value: 1
-  m_Size: 0.31265002
+  m_Size: 0.31265
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -41674,9 +41674,10 @@ GameObject:
   - component: {fileID: 610539616244103361}
   - component: {fileID: 610539616244103363}
   - component: {fileID: 610539616244103362}
+  - component: {fileID: 610539616244103364}
   m_Layer: 0
   m_Name: WIndow.004
-  m_TagString: Untagged
+  m_TagString: ObjectMove
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -41728,6 +41729,25 @@ Animation:
   m_PlayAutomatically: 0
   m_AnimatePhysics: 0
   m_CullingType: 0
+--- !u!114 &610539616244103364
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 610539616244103360}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 957c685309b631d4da5121286803e639, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  host: {fileID: 814865351}
+  target: {fileID: 610539616244103362}
+  stateNames:
+  - WindowOpen
+  - WindowClose
+  currentState: 0
+  isActive: 1
 --- !u!4 &613462594380870768
 Transform:
   m_ObjectHideFlags: 0
@@ -58135,9 +58155,12 @@ GameObject:
   - component: {fileID: 1775370679900837968}
   - component: {fileID: 1113975078223521654}
   - component: {fileID: 2271730883025226535}
+  - component: {fileID: 2271730883025226537}
+  - component: {fileID: 2271730883025226536}
+  - component: {fileID: 2271730883025226538}
   m_Layer: 0
-  m_Name: WIndow
-  m_TagString: Untagged
+  m_Name: WIndow.002
+  m_TagString: ObjectMove
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -58155,6 +58178,59 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.008666383, y: 0.0010218362, z: 0.014022204}
   m_Center: {x: -0.0000070713013, y: 0.00025820866, z: -0.0008000798}
+--- !u!95 &2271730883025226536
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2271730883025226534}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 776ffa97664a046438a7f7b95e3d0faf, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!111 &2271730883025226537
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2271730883025226534}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 0e94f3af73d69954faa479b2716992ec, type: 2}
+  m_Animations: []
+  m_WrapMode: 0
+  m_PlayAutomatically: 0
+  m_AnimatePhysics: 0
+  m_CullingType: 0
+--- !u!114 &2271730883025226538
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2271730883025226534}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 957c685309b631d4da5121286803e639, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  host: {fileID: 814865351}
+  target: {fileID: 2271730883025226536}
+  stateNames:
+  - WindowOpen
+  - WindowClose
+  currentState: 0
+  isActive: 1
 --- !u!33 &2274687647549972959
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -67654,7 +67730,7 @@ GameObject:
   - component: {fileID: 3307060325831435226}
   m_Layer: 0
   m_Name: WIndow.001
-  m_TagString: Untagged
+  m_TagString: ObjectMove
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -67823,9 +67899,12 @@ GameObject:
   - component: {fileID: 2965984528035653696}
   - component: {fileID: 4539500206208194406}
   - component: {fileID: 3318280184510839607}
+  - component: {fileID: 3318280184510839609}
+  - component: {fileID: 3318280184510839608}
+  - component: {fileID: 3318280184510839610}
   m_Layer: 0
-  m_Name: WIndow
-  m_TagString: Untagged
+  m_Name: WIndow.003
+  m_TagString: ObjectMove
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -67843,6 +67922,59 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.008666383, y: 0.008216004, z: 0.014022207}
   m_Center: {x: -0.000006594464, y: 0.0038533835, z: -0.00080007996}
+--- !u!95 &3318280184510839608
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3318280184510839606}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 3fd549ad44870c1459bac97624a802fc, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!111 &3318280184510839609
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3318280184510839606}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: cbf35dcd86cd8774fa861ab428cf0b18, type: 2}
+  m_Animations: []
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
+--- !u!114 &3318280184510839610
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3318280184510839606}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 957c685309b631d4da5121286803e639, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  host: {fileID: 814865351}
+  target: {fileID: 3318280184510839608}
+  stateNames:
+  - WindowOpen
+  - WindowClose
+  currentState: 0
+  isActive: 1
 --- !u!4 &3321662902381538466
 Transform:
   m_ObjectHideFlags: 0
@@ -75887,7 +76019,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 6795462705980167066, guid: 8535e80f2051afb41ac8fc426563fc4e, type: 3}
+  - {fileID: 2100000, guid: 1b692b057411e704a9592a392c950b67, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

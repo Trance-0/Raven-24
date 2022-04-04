@@ -48,5 +48,5 @@ ArtifactDB
 # Files that unable to push
 ###
 
-3DModelFolder/Raven-24Models/Character.blend*
+3DModelFolder/Archives/Character.blend*
 ProjectFolder/Raven-24/Library/ArtifactDB*
