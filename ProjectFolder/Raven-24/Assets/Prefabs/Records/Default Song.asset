@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9d7de75090e16645b3672679692c763, type: 3}
+  m_Name: Default Song
+  m_EditorClassIdentifier: 
+  _title: Default Record
+  _info:
+  - The default record for developer to test bgm.
+  _childs: []
+  _icon: {fileID: 21300000, guid: 0cd44fc8344c4a248bb28d0b1990ba2c, type: 3}
+  _mesh: {fileID: 9206008875571487573, guid: ff1a5a0291e1d0540892f4c277f1bb08, type: 3}
+  _weight: 0
+  _key: Record.001

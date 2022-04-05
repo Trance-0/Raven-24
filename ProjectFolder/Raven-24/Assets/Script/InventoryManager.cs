@@ -111,8 +111,8 @@ public class InventoryManager : MonoBehaviour
                 dataManager.inventory.Remove(selected.GetComponent<ItemUI>().item);
                 selected = null;
                 UpdateItem();
+                return true;
             }
-            return true;
         }
         return false;
     }

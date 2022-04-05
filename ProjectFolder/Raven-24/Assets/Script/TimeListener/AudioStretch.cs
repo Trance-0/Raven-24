@@ -22,17 +22,19 @@ public class AudioStretch : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        if (timer <= 0)
-        {
-            sound.Pause();
-        }
-        else {
-            timer -= Time.deltaTime * Math.Abs(host.SynchronizeSpeed());
-            if (haveAnimation)
+        if (sound!=null) {
+            if (timer <= 0)
             {
-                animationOnPlay.SetFloat("multiplier",host.SynchronizeSpeed());
+                sound.Pause();
             }
-            sound.pitch = host.SynchronizeSpeed();
+            else {
+                timer -= Time.deltaTime * Math.Abs(host.SynchronizeSpeed());
+                if (haveAnimation)
+                {
+                    animationOnPlay.SetFloat("multiplier", host.SynchronizeSpeed());
+                }
+                sound.pitch = host.SynchronizeSpeed();
+            }
         }
     }
     public void Play(float duration) {

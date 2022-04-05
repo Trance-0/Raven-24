@@ -70,6 +70,8 @@ public class MouseMove: MonoBehaviour
                     if (Input.GetMouseButtonDown(0))
                     {
                         GameObject hit = rayHit.transform.gameObject;
+                        textShowTimer = textShowTimeMax;
+                        title.text = hit.name;
                         Debug.Log(string.Format("Mouse raycast on object {0}, with tag {1}", hit.name, hit.tag));
 
                         if (hit.tag == "AccessPoint")
@@ -79,6 +81,34 @@ public class MouseMove: MonoBehaviour
                             originalTransform = mouseMove.transform;
                             targetTransform = hit.transform;
                             playerMove.isActive = false;
+                        }
+                        else if (hit.name=="RecordPlayer") {
+                            ItemHandle recordPlayerHandle = hit.GetComponent<ItemHandle>();
+                            AudioStretch recordPlayerAudio = hit.GetComponent<AudioStretch>();
+                            // if player want to add new record
+                            if (inventoryManager.PutItem(recordPlayerHandle)) {
+                                recordPlayerAudio.sound = recordPlayerHandle.keyshape.GetComponent<AudioSource>();
+                                recordPlayerAudio.Play(recordPlayerAudio.sound.clip.length);
+                                Debug.Log(string.Format("Adding record to player..."));
+                            }
+                            // pause or play audio
+                            else {
+                                // if there is a record to play
+                                if (recordPlayerHandle.keyshape != null)
+                                {
+                                    // play audio
+                                    if (recordPlayerAudio.timer <= 0)
+                                    {
+                                        recordPlayerAudio.sound = recordPlayerHandle.keyshape.GetComponent<AudioSource>();
+                                        recordPlayerAudio.Play(recordPlayerAudio.sound.clip.length);
+                                    }
+                                    // pause audio
+                                    else
+                                    {
+                                        recordPlayerAudio.timer = 0;
+                                    }
+                                }
+                            }
                         }
                         else if (hit.tag == "ItemHandle")
                         {
