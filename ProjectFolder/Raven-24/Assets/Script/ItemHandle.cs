@@ -36,7 +36,7 @@ public class ItemHandle : MonoBehaviour
     }
     public bool PutItem(Item sourceItem) {
         // if the key is valid and no other object is placed.
-        if (key.Contains(sourceItem._key)&&item==null) {
+        if (sourceItem._key.Contains(key)&&item==null) {
             // if there is no lock
             if (lockshape == null)
             {
@@ -73,7 +73,7 @@ public class ItemHandle : MonoBehaviour
         lockshape.transform.rotation = keyshape.transform.rotation;
         lockshape.transform.localScale = keyshape.transform.localScale;
         lockshape.GetComponent<Rigidbody>().isKinematic = true;
-        lockshape.GetComponent<BoxCollider>().isTrigger = true;
+        //lockshape.GetComponent<BoxCollider>().isTrigger = true;
         return result;
     }
 }

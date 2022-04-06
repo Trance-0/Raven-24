@@ -103,12 +103,18 @@ public class InventoryManager : MonoBehaviour
         }
     }
 
-    public void PutItem(ItemHandle emptyItem) {
-        if (emptyItem.PutItem(selected.GetComponent<ItemUI>().item)) {
-            dataManager.inventory.Remove(selected.GetComponent<ItemUI>().item);
-            selected = null;
-            UpdateItem();
+    public bool PutItem(ItemHandle emptyItem) {
+        if (selected != null)
+        {
+            if (emptyItem.PutItem(selected.GetComponent<ItemUI>().item))
+            {
+                dataManager.inventory.Remove(selected.GetComponent<ItemUI>().item);
+                selected = null;
+                UpdateItem();
+                return true;
+            }
         }
+        return false;
     }
     
 }
