@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class DataManager : MonoBehaviour
 {
@@ -8,7 +9,17 @@ public class DataManager : MonoBehaviour
     // Start is called before the first frame update
     public int progress;
     public Dictionary<string,Sprite> imageReference;
-    public List<Item> inventory;
+    // Store the state of pages, plots
+    public List<Item> pages;
+    public List<bool> pageState;
+    public List<int> newPages;
+    // UI elements
+    public GameObject frontPage;
+    public GameObject backPage;
+    public List<GameObject> bookMarks;
+
+    public KeyCode hostKey;
+
     void Start()
     {
         
@@ -18,5 +29,9 @@ public class DataManager : MonoBehaviour
     void Update()
     {
         
+    }
+
+    private bool OpenDiary() {
+        return true;
     }
 }

@@ -6,6 +6,12 @@ using UnityEngine.UI;
 [CreateAssetMenu(fileName = "items", menuName = "Inventory/new Item")]
 public class Item : ScriptableObject
 {
+    /* Item is the only ScriptableObject you will use in this game.
+     * 
+     * Main Function:
+     *  Record information related to the object with page specified.
+     *  
+     */
     public string _title;
     public List<string> _info;
     public List<Item> _childs;

@@ -41,7 +41,9 @@ Sub topics:
 
 ## UI Design
 
-To bing player immersive experience, the only two object you will have is 
+### Philosophy of Design
+
+To bring player immersive experience, the only two object you will have is 
 
 ### The Mechanism
 
@@ -59,13 +61,33 @@ Every page of diary contains two parts:
 
 Only writing from Kalina.
 
-| Empty memory          | Vage memory                                                  | Full memory                                                  |
+| Empty memory          | Vague memory                                                 | Full memory                                                  |
 | --------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | <br /><br />   <br /> | Fresh Roses       <br />Fresh roses sadsfd, dry timber [] hile the[], the dead settles in eternity.   One []         **Violet Rain,** for dying is only apart of liv[]ne: Every sweet and sorr[] of past and future,** exist **here.** <br /> | Fresh Roses       <br />Fresh roses smells like the flavor of tea interweaved through fruity sweet berries   , whereas dead roses reminds me of the past---like rough, smoked, dry timber. While the fresh is restricted to the moment, the dead settles in eternity.   One valued for its beauty and symbol for love, the other for its long-lived **memories.**           <br />**Violet Rain,** for dying is only apart of living, dying apart of living.  There never was a choice,  as they are all apart of one: Every sweet and sorrow, every **fragment of past and future,** exist **here.** <br /> |
 
-#### Sampel back page: 
+#### Sample back page: 
 
 usually source of memory, may include dialogue or {player}'s inner thoughts.
+
+#### Inner World:
+
+Another separated world for plot. When grabbing object from outside world to inner world, the player can solve the puzzle in inner world. 
+
+##### Phase 1
+
+The player take objects from outside world and adding details to inner world.
+
+##### Phase 2
+
+The inner world is rich enough (in detail) comparing to outside world, the player can change inner world configuration by series of operations in outside world.
+
+##### Phase 3
+
+The outside world is almost empty and most operations are executed in inner world.
+
+##### Phase 4
+
+The player will live in inner world and can not exit the picure. 
 
 ## Object system
 
@@ -135,7 +157,7 @@ collect all the stories in Kalina's diary.
 
 
 
-## Possible Explaination
+## Possible Explanation
 
 ### Theory I
 
@@ -159,7 +181,7 @@ Kalina is a time traveler come form future. She have lived in the room for thous
 
 ### Theory III
 
-Nihlism
+Nihilism
 
 Kalina find her find no solution to nihlism and choose to end his meaningless life
 
